@@ -1060,7 +1060,7 @@ var money_per_second = 1;
 var costc = 100;
 var costs = 100;
 var companylvl = 0;
-var companyprice = 500000;
+var companyprice = 2000000;
 var companyupgradeprice = 1000000;
 var companyincome = 100000;
 }
@@ -1213,7 +1213,7 @@ function upgradeCompany()
 		alert("You are in debt.");
 	}
 	companylvl += 1;
-	companyupgradeprice *= 1.2;
+	companyupgradeprice *= 1.5;
 	companyincome += 100000;
 	companyupgradeprice = companyupgradeprice.toFixed(0);
 	updateDisplay();
