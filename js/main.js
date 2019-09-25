@@ -1059,8 +1059,9 @@ secondsLast = dLast.getTime()/1000;
 secondsToday = dToday.getTime()/1000;
 seconds = secondsToday-secondsLast;
 seconds = Math.round(seconds);
-console.log(seconds);
-money += money_per_second*seconds;
+moneywhilegone = money_per_second*seconds;
+money += moneywhilegone
+console.log(moneywhilegone);
 }
 else
 {
