@@ -1038,15 +1038,16 @@ var money_per_second = 1;
 var costc = 100;
 var costs = 100;
 var companylvl = 0;
-var companyprice = 2000000;
-var companyupgradeprice = 1000000;
-var companyincome = 100000;
+var companyprice = 1000000;
+var companyupgradeprice = 500000;
+var companyincome = 1000;
 var dToday = new Date();
 var dLast = new Date();
 
-var playedbefore = prompt("Load Save? (if you are new to the game say 'n') [Y/N]")
+//var playedbefore = prompt("Load Save? (if you are new to the game say 'n') [Y/N]")
 
-if(playedbefore.toUpperCase() == "Y")
+//if(playedbefore.toUpperCase() == "Y")
+if(isNaN(localStorage.getItem("dlr")) == false)
 {
 	money = parseInt(localStorage.getItem("dlr"));
 money_per_click = parseInt(localStorage.getItem("mpc"));
@@ -1070,9 +1071,9 @@ var money_per_second = 1;
 var costc = 100;
 var costs = 100;
 var companylvl = 0;
-var companyprice = 2000000;
-var companyupgradeprice = 1000000;
-var companyincome = 100000;
+var companyprice = 1000000;
+var companyupgradeprice = 500000;
+var companyincome = 1000;
 var dToday = new Date();
 var dLast = new Date();
 }
@@ -1232,7 +1233,7 @@ function upgradeCompany()
 	}
 	companylvl += 1;
 	companyupgradeprice *= 1.5;
-	companyincome += 100000;
+	companyincome += 1000;
 	companyupgradeprice = companyupgradeprice.toFixed(0);
 	updateDisplay();
 }
