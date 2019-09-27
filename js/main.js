@@ -1041,8 +1041,8 @@ var companylvl = 0;
 var companyprice = 1000000;
 var companyupgradeprice = 500000;
 var companyincome = 1000;
-var dToday = new Date();
-var dLast = new Date();
+//var dToday = new Date();
+//var dLast = new Date();
 
 //var playedbefore = prompt("Load Save? (if you are new to the game say 'n') [Y/N]")
 
@@ -1054,14 +1054,14 @@ money_per_click = parseInt(localStorage.getItem("mpc"));
 money_per_second = parseInt(localStorage.getItem("mps"));
 costc = parseInt(localStorage.getItem("costc"));
 costs = parseInt(localStorage.getItem("costs"));
-dLast = new Date(localStorage.getItem("dLast"));
-dToday = new Date(dToday)
-secondsLast = dLast.getTime()/1000;
-secondsToday = dToday.getTime()/1000;
-seconds = secondsToday-secondsLast;
-seconds = Math.round(seconds);
-console.log(seconds);
-money += money_per_second*seconds;
+//dLast = new Date(localStorage.getItem("dLast"));
+//dToday = new Date(dToday)
+//secondsLast = dLast.getTime()/1000;
+//secondsToday = dToday.getTime()/1000;
+//seconds = secondsToday-secondsLast;
+//seconds = Math.round(seconds);
+//console.log(seconds);
+//money += money_per_second*seconds;
 }
 else
 {
@@ -1074,8 +1074,8 @@ var companylvl = 0;
 var companyprice = 1000000;
 var companyupgradeprice = 500000;
 var companyincome = 1000;
-var dToday = new Date();
-var dLast = new Date();
+//var dToday = new Date();
+//var dLast = new Date();
 }
 
 
@@ -1369,6 +1369,6 @@ localStorage.setItem("mps", money_per_second);
 localStorage.setItem("costc", costc);
 localStorage.setItem("costs", costs);
 }
-window.onbeforeunload = function(){
+/*window.onbeforeunload = function(){
    localStorage.setItem("dLast", dToday);
-}
+}*/
