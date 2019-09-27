@@ -12,11 +12,11 @@
 * Add hiring assassins
 * Add nightclubs
 * Add more cheat codes
+* Add offline profit
 
 ## Finished Updates
 * Added game saving
 * Added so user can create their own company
 * Added 3 companies to buy
-* Added offline profit
 * Added cheat mode and some cheat codes
 * Changed income/sec rate for user's company
