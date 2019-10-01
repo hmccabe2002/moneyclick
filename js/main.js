@@ -1135,7 +1135,7 @@ function upgradeClicker()
 	{
 		alert("You are in debt.");
 	}
-	/*if (costc < 1000)
+	if (costc < 1000)
 		money_per_click += 4;
 	else if (costc >= 1000 && costc < 5000)
 		money_per_click += 6;
@@ -1154,20 +1154,19 @@ function upgradeClicker()
 	else if (costc >= 500000 && costc < 1000000)
 		money_per_click += 100;
 	else if (costc >= 1000000)
-		money_per_click += 200;*/
-	money_per_click += 5;
+		money_per_click += 200;
 	updateDisplay();
 }
 function upgradeMps()
 {
 	money -= costs;
-	costs = costs * 1.7;
+	costs = costs * 1.6;
 	costs = costs.toFixed(0);
 	if (money < 0)
 	{
 		alert("You are in debt.");
 	}
-	/*if (costs < 1000)
+	if (costs < 1000)
 		money_per_second += 4;
 	else if (costs >= 1000 && costs < 5000)
 		money_per_second += 6;
@@ -1186,8 +1185,7 @@ function upgradeMps()
 	else if (costs >= 500000 && costs < 1000000)
 		money_per_second += 100;
 	else if (costs >= 1000000)
-		money_per_second += 200;*/
-	money_per_second += 5;
+		money_per_second += 200;
 	updateDisplay();
 }
 function mps()
