@@ -1035,8 +1035,8 @@ const PR = "."; //period
 var money = 0;
 var money_per_click = 1;
 var money_per_second = 1;
-var costc = 100;
-var costs = 100;
+var costc = 50;
+var costs = 50;
 var companylvl = 0;
 var companyprice = 1000000;
 var companyupgradeprice = 500000;
@@ -1068,8 +1068,8 @@ else
 var money = 0;
 var money_per_click = 1;
 var money_per_second = 1;
-var costc = 100;
-var costs = 100;
+var costc = 50;
+var costs = 50;
 var companylvl = 0;
 var companyprice = 1000000;
 var companyupgradeprice = 500000;
@@ -1129,7 +1129,7 @@ function getMoney()
 function upgradeClicker()
 {
 	money -= costc;
-	costc = costc * 1.5;
+	costc = costc * 1.45;
 	costc = costc.toFixed(0);
 	if (money < 0)
 	{
@@ -1160,7 +1160,7 @@ function upgradeClicker()
 function upgradeMps()
 {
 	money -= costs;
-	costs = costs * 1.6;
+	costs = costs * 1.5;
 	costs = costs.toFixed(0);
 	if (money < 0)
 	{
